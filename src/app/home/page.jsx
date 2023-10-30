@@ -4,8 +4,9 @@ import Experience from '../components/Experience'
 
 import Ourblog from '../components/Ourblog'
 import Teamcard from '../components/Teams'
-import Contactform from '../components/contactform'
+
 import Services from '../components/Services'
+import Contactform from '../components/Contactform'
 
 const Homepage = () => {
   return (
