@@ -7,11 +7,11 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 const Ourblog = () => {
   return (
     <div>
-        <div className='ml-100'>
+        <div className='ml-100 blog-head'>
         <h1 className='text-4xl font-bold text-black'>Our Blog</h1>
             <h2 className='mb-8 mt-1 text-base ml-128 text-slate-900'>Latest Blog & News --- </h2>
         </div>
-        <div className='flex space-x-8 ml-16 '>
+        <div className='flex space-x-8 ml-16 blog-content'>
             <div className='w-96 h-100  relative shadow-2xl rounded-xl'>
                <img src="images/11.jpg" alt="" className='rounded-xl'/>
                <div className='w-48 h-10 bg-yellow-400  absolute top-60 ml-24 pl-4 rounded-lg'>

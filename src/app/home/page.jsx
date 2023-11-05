@@ -7,6 +7,7 @@ import Teamcard from '../components/Teams'
 
 import Services from '../components/Services'
 import Contactform from '../components/Contactform'
+import Blogsection from '../components/Blogsection'
 
 const Homepage = () => {
   return (
@@ -18,7 +19,8 @@ const Homepage = () => {
         <Experience/>
         <Services/>
         <Teamcard/>
-        <Ourblog/>
+        {/* <Ourblog/> */}
+        <Blogsection/>
         <Contactform/>
     </div>
   )

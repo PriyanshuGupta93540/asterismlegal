@@ -10,15 +10,15 @@ import ApartmentIcon from '@mui/icons-material/Apartment';
  const ServiceCard = () => {
   return (
     <>
-      <section className="bg-white dark:bg-gray-900 mt-8">
-  <div class=" px-4 mx-auto max-w-screen-xl sm:py-12 lg:px-6">
+      <section className="bg-white dark:bg-gray-900 mt-8 serv">
+  <div class=" px-4 mx-auto max-w-screen-xl sm:py-12 lg:px-6 serv-container">
   <div className="w-full px-4">
-            <div className="mx-auto mb-[60px] max-w-[510px] text-center">
+            <div className="mx-auto mb-[60px] max-w-[510px] text-center serv-our">
              
-              <h2 className="mb-4 text-3xl font-bold text-dark sm:text-4xl md:text-[40px]">
+              <h2 className="mb-4 text-3xl font-bold text-dark sm:text-4xl md:text-[40px] serv-head">
                 Our Services
               </h2>
-              <p className="text-base text-body-color">
+              <p className="text-base text-body-color serv-p">
                 There are many variations of passages of Lorem Ipsum available
                 but the majority have suffered alteration in some form.
               </p>

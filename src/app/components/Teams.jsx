@@ -6,7 +6,7 @@ const Team = () => {
       <div className="container">
         <div className="flex flex-wrap -mx-4">
           <div className="w-full px-4">
-            <div className="mx-auto mb-[60px] max-w-[510px] text-center">
+            <div className="mx-auto mb-[60px] max-w-[510px] text-center teams-content">
               
               <h2 className="mb-4 text-3xl font-bold text-dark sm:text-4xl md:text-[40px]">
                 Our Awesome Team

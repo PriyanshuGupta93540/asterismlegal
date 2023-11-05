@@ -4,6 +4,8 @@ import Footer from './components/Footer'
 import Homepage from './home/page.jsx'
 import Header from './components/Header'
 
+
+
 export default function Home() {
 
   // const homemaain = {
@@ -19,7 +21,8 @@ export default function Home() {
         <Header />
         <Homepage/>
         
-       <Footer/>
+       <Footer/>/
+      
     </main>
   )
 }

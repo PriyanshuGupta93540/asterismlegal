@@ -14,6 +14,8 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import { useRouter } from 'next/navigation';
+import Contactform from '../components/Contactform';
+import Contactupdate from "../components/contactupdate"
 
 const Contactus = () => {
 
@@ -66,25 +68,25 @@ const Contactus = () => {
             <div className='aboutus' >
                 <img src="images/1.jpg" alt="" className='w-full h-102'/>
             </div>
-            <div className={`top-12 absolute text-white ${isHeaderFixed ? 'fixed-header background-change' : 'fixed-header'}`}>
+            <div className={`top-12 absolute header_inner text-white ${isHeaderFixed ? 'fixed-header background-change' : 'fixed-header'}`}>
         <div className='flex ml-4 absolute top-6'>
-            <div className='filter brightness-200 ml-16 text-overlay mt-6'>
+            <div className='filter brightness-200 ml-16 text-overlay mt-6 head-logo'>
             <Link href="/">
-          <img src="images/logo.png" alt="" className="w-28 h-20 text-yellow-700" />
+          <img src="images/logo.png" alt="" className="w-28 h-20 text-yellow-700 about-logo" />
           </Link>
             </div>
-            <div className='w-100 relative'>
-                <ul className='flex space-x-8 mt-6 ml-102 text-overlay w-100'>
+            <div className='w-100 relative header_inner_content'>
+                <ul className='flex space-x-8 mt-6 ml-102 text-overlay w-100 head-ul'>
                     <Link href="/">
                         <li>HOME</li>
                     </Link>
-                    <Link href="/aboutus" className='nav-link  hover:text-white transition '>
+                    <Link href="/aboutus" className='nav-link  hover:text-white transition header-li'>
                          <li>ABOUT US</li>
                     </Link>
 
                     <li className="relative">
           <button
-            className="cursor-pointer focus:outline-none"
+            className="cursor-pointer focus:outline-none about-service header-li"
             onClick={toggleDropdown}
           >
             SERVICES
@@ -117,10 +119,10 @@ const Contactus = () => {
         </li>
 
                     <Link href="/ourblog">
-                         <li>BLOG</li>
+                         <li className='header-li about-blog'>BLOG</li>
                     </Link>
                     <Link href="/contactus" className='nav-link  hover:text-white transition'>
-                         <li>CONTACT US</li>
+                         <li className='header-li about-contact'>CONTACT US</li>
                     </Link>
                     
                     
@@ -128,7 +130,7 @@ const Contactus = () => {
                     
                 </ul>
             </div>
-            <div className='flex mt-6 text-overlay ml-101 w-48'>
+            <div className='flex mt-6 text-overlay ml-101 w-48 head-call'>
                 <div className='mt-2 mr-2'>
                 <PhoneIphoneIcon />
                 </div>
@@ -145,7 +147,7 @@ const Contactus = () => {
       
 
         </div>
-        <div className='absolute top-96 left-100'>
+        <div className='absolute top-96 left-100 about-start'>
          <div className='text-overlay mt-36 w-96 h-24 bg-white z-0 flex pt-4 relative ml-24'>
                 <div className='text-slate-500 mr-4 ml-6 mt-2'>
                 <ContactMailIcon className='w-10 h-10 text-yellow-600'/>
@@ -158,7 +160,8 @@ const Contactus = () => {
             </div>
          </div>
 
-         <Contact/>
+         {/* <Contact/> */}
+        <Contactupdate/>
 
         <Maps/>
 

@@ -58,24 +58,24 @@ const Header = () => {
   return (
     <div className="top-12 absolute text-white">
       
-<div className=''>
+<div className='header'>
        
-<div className={`top-12 absolute text-white ${isHeaderFixed ? 'fixed-header background-change' : 'fixed-header'}`}>
+<div className={`top-12 absolute header_inner text-white ${isHeaderFixed ? 'fixed-header background-change' : 'fixed-header'}`}>
         <div className="filter brightness-200 ml-16 text-overlay mt-8">
           <Link href="/">
-          <img src="images/logo.png" alt="" className="w-28 h-20 text-yellow-700" />
+          <img src="images/logo.png" alt="" className="w-28 h-20 text-yellow-700 head-logo" />
           </Link>
         </div>
-        <div className="w-100 relative">
-          <ul className="flex space-x-8 mt-8 ml-102 text-overlay w-100">
+        <div className="w-100 relative header_inner_content">
+          <ul className="flex space-x-8 mt-8 ml-102 text-overlay w-100 head-ul">
             <Link href="/" className="nav-link text-gray-300 hover:text-white transition ">
-              <li>HOME</li>
+              <li className='header-li-home'>HOME</li>
             </Link>
             <Link href="/aboutus" className="nav-link hover:text-white transition ">
-              <li>ABOUT US</li>
+              <li className='header-li'>ABOUT US</li>
             </Link>
             <li className="relative">
-              <button className="cursor-pointer focus:outline-none" onClick={toggleDropdown} >
+              <button className="cursor-pointer focus:outline-none header-li" onClick={toggleDropdown} >
                 SERVICES
               </button>
               <ul
@@ -104,14 +104,14 @@ const Header = () => {
               </ul>
             </li>
             <Link href="/ourblog">
-              <li>BLOG</li>
+              <li className='header-li'>BLOG</li>
             </Link>
             <Link href="/contactus">
-              <li>CONTACT US</li>
+              <li className='header-li'>CONTACT US</li>
             </Link>
           </ul>
         </div>
-        <div className="flex mt-6 text-overlay ml-101 w-48">
+        <div className="flex mt-6 text-overlay ml-101 w-48 head-call">
           <div className="mt-2 mr-2">
             <PhoneIphoneIcon />
           </div>
@@ -122,13 +122,13 @@ const Header = () => {
         </div>
       </div>
       </div>
-      <div className="text-overlay mt-80 ml-96">
+      <div className="text-overlay mt-80 ml-96 header-overlay">
         <div className="relative text-yellow-500">
           <h1>ASTERISM LEGAL LAW FIRM</h1>
           <hr className="w-16 absolute top-3 left-56 border-yellow-500"></hr>
         </div>
         <div className="w-96 mt-4">
-          <h1 className="text-5xl">BEST LAW FIRM SINCE 2005</h1>
+          <h1 className="text-5xl header-overlay-best">BEST LAW FIRM SINCE 2005</h1>
         </div>
         <div className="text-xs mt-4 text-justify">
           <p>
@@ -141,67 +141,67 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="ml-36 absolute top-0 left-60">
-        <div className="flex-col">
-          <div className="text-overlay mt-100 w-96 h-24 bg-white z-0 flex pt-4 relative ml-24">
+      <div className="ml-36 absolute top-0 left-60 header-law-container">
+        <div className="flex-col header-law header-law-box">
+          <div className="text-overlay mt-100 w-96 h-24 header-law-box-one bg-white z-0 flex pt-4 relative ml-24">
             <div className="text-slate-500 mr-4 ml-6 mt-2">
               <CorporateFareIcon className="w-10 h-10" />
             </div>
             <div className="text-black mt-2">
               <h1 className="">CORPORATE LAW</h1>
-              <p className="text-xs  w-72 text-slate-600 mt-1">
+              <p className="text-xs  w-72 text-slate-600 mt-1 corp-content">
                 Our expertise across diverse practice areas and sectors covers varied and nuanced needs. Backed by over 100 years of legal heritage,
               </p>
-            </div>
-            <div className=" mt-20 absolute left-64 rounded-l-3xl top-8 flex w-28 h-8 pl-4 bg-yellow-500">
+            </div>  
+            <div className=" mt-20 corp absolute left-64 rounded-l-3xl top-8 flex w-28 h-8 pl-4 bg-yellow-500">
               <h3 className="text-xs mt-2">Read More</h3>
-              <ArrowForwardIcon className="mt-1 ml-1" />
+              <ArrowForwardIcon className="mt-1 ml-1 " />
             </div>
           </div>
-          <div className="text-overlay mt-100 w-96 h-24 bg-white z-0 flex pt-4 relative ml-104">
+          <div className="text-overlay header-law-box-two mt-100 w-96 h-24 header-law-box-first bg-white z-0 flex pt-4 relative ml-104">
             <div className="text-slate-500 mr-4 ml-6 mt-2">
               <CorporateFareIcon className="w-10 h-10" />
             </div>
             <div className="text-black mt-2">
               <h1>REAL ESTATE LAW</h1>
-              <p className="text-xs  w-72 text-slate-600 mt-1">
+              <p className="text-xs  w-72 text-slate-600 mt-1 corp-content">
                 Our expertise across diverse practice areas and sectors covers varied and nuanced needs. Backed by over 100 years of legal heritage,
               </p>
             </div>
-            <div className=" mt-20 absolute left-64 rounded-l-3xl top-8 flex w-28 h-8 pl-4 bg-yellow-500">
+            <div className=" mt-20 absolute real left-64 rounded-l-3xl top-8 flex w-28 h-8 pl-4 bg-yellow-500">
               <h3 className="text-xs mt-2">Read More</h3>
               <ArrowForwardIcon className="mt-1 ml-1" />
             </div>
           </div>
         </div>
-        <div className="flex-col mt-105">
-          <div className="text-overlay mt-8 w-96
+        <div className="flex-col mt-105 header-law-box-second">
+          <div className="text-overlay mt-8 w-96 header-law-box-insurance
              h-24 bg-white z-0 flex pt-4 relative ml-24">
             <div className="text-slate-500 mr-4 ml-6 mt-2">
               <CorporateFareIcon className="w-10 h-10" />
             </div>
             <div className="text-black mt-2">
               <h1>INSURANCE LAW</h1>
-              <p className="text-xs  w-72 text-slate-600 mt-1">
+              <p className="text-xs  w-72 text-slate-600 mt-1 corp-content">
                 Our expertise across diverse practice areas and sectors covers varied and nuanced needs. Backed by over 100 years of legal heritage,
               </p>
             </div>
-            <div className=" mt-20 absolute left-64 rounded-l-3xl top-8 flex w-28 h-8 pl-4 bg-yellow-500">
+            <div className=" mt-20 absolute left-64 real rounded-l-3xl top-8 flex w-28 h-8 pl-4 bg-yellow-500">
               <h3 className="text-xs mt-2">Read More</h3>
               <ArrowForwardIcon className="mt-1 ml-1" />
             </div>
           </div>
-          <div className="text-overlay mt-8 w-96 h-24 bg-white z-0 flex pt-4 relative ml-104">
-            <div className="text-slate-500 mr-4 ml-6 mt-2">
+          <div className="text-overlay mt-8 w-96 h-24 bg-white z-0 flex pt-4 relative ml-104 header-law-box-fourth">
+            <div className="text-slate-500 mr-4 ml-6 mt-2 real-head">
               <CorporateFareIcon className="w-10 h-10" />
             </div>
             <div className="text-black mt-2">
               <h1>FAMILY LAW</h1>
-              <p className="text-xs  w-72 text-slate-600 mt-1">
+              <p className="text-xs  w-72 text-slate-600 mt-1 corp-content">
                 Our expertise across diverse practice areas and sectors covers varied and nuanced needs. Backed by over 100 years of legal heritage,
               </p>
             </div>
-            <div className=" mt-20 absolute left-64 rounded-l-3xl top-8 flex w-28 h-8 pl-4 bg-yellow-500">
+            <div className=" mt-20 absolute family left-64 rounded-l-3xl top-8 flex w-28 h-8 pl-4 bg-yellow-500">
               <h3 className="text-xs mt-2">Read More</h3>
               <ArrowForwardIcon className="mt-1 ml-1" />
             </div>
